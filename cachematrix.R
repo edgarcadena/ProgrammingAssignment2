@@ -6,7 +6,7 @@
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   
-  #sets x matrix variable and clears inverse cache only if argument is different from inverse cache
+  #sets x matrix variable and clears inverse cache only if argument is different from original matrix
   set <- function(y) {
     if (!identical(x,y)) {
       x <<- y
